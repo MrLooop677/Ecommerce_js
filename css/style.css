@@ -1,0 +1,254 @@
+/* statr common style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* end common style */
+
+
+/* statr header style */
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .brand {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav {
+    line-height: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul#user_info {
+    display: none;
+    align-items: center;
+}
+
+nav ul#user_info li {
+    margin: 0 7px;
+}
+
+nav ul#user_info li .Shopping-cart {
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav ul#user_info li.shopping {
+    position: relative;
+}
+
+nav ul#user_info li .badge {
+    width: 20px;
+    height: 20px;
+    background: crimson;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -9px;
+    right: -11px;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+nav ul#user_info .carts-products {
+    position: absolute;
+    width: 200px;
+    transform: translate(-42%, 0);
+    background: #eaeaea;
+    top: 46px;
+    padding: 10px;
+    border: 1px solid green;
+    display: none;
+}
+
+nav ul#user_info .carts-products a {
+    background: darkgreen;
+    display: block;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 8px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    min-width: 50px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+
+/* end header style */
+
+
+/* search input */
+
+#search {
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+}
+
+
+/* searh input */
+
+
+/* statr form style */
+
+.section-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+    background-color: #BC6FF1;
+    padding: 20px;
+}
+
+.section-form h2 {
+    color: #52057b;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.section-form form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    height: 40px;
+    margin: 5px 0;
+    border: 1px solid #DDD;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section-form form input[type=submit] {
+    text-transform: uppercase;
+    font-size: 25px;
+    height: auto;
+    cursor: pointer;
+}
+
+.section-form form input[type=submit]:hover {
+    opacity: .8;
+}
+
+
+/* end form style */
+
+
+/* start product style */
+
+.products {
+    margin: 10px 0;
+    width: 60%;
+}
+
+.product-item {
+    display: flex;
+    width: 100%;
+    border: 1px solid #DDD;
+    margin-bottom: 20px;
+    min-height: 150px
+}
+
+.product-item-desc {
+    font-family: 'Oswald', sans-serif;
+}
+
+.product-item-img {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.product-item a {
+    display: block;
+    color: #333;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.product-item-action {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.product-item-action .add-to-cart {
+    display: block;
+    margin-left: auto;
+    padding: 10px 20px;
+    border: none;
+    outline: 0;
+    background-color: #006400;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+.product-item-action .fav {
+    display: block;
+    margin-left: auto;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+/* end product style */
+
+.item-details img {
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #333;
+    padding: 2px;
+    height: 400px;
+    object-fit: cover;
+}
